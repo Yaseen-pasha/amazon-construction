@@ -8,40 +8,26 @@ const dotenv = require("dotenv");
 const { nextTick } = require("process");
 
 dotenv.config({path:"./config.env"});
+
 const app = express();
 const port = process.env.PORT || 8000;
 
 
-// const DB = process.env.DATABASE;
-// const DB = process.env.DATABASE;
-// console.log(DB)
+
+
+const DB = process.env.DATABASE;
+console.log(DB)
+
 // creating database
-mongoose.connect(
-    process.env.DATABASE,
-    {
-        useUnifiedTopology:true,
-        useNewUrlParser:true,
-    },
-    ()=>{
-        console.log("connection successful");
-
-    }
-);
-
-
-// mongoose.connect(
-//     process.env.DATABASE,
-//     {
-        
-//         useUnifiedTopology:true,
-//         useNewUrlParser:true,
-
-// }).then(()=>{
-//     console.log("connection successful");
-// }).catch((error)=>{
-//     console.log(error);
-//     console.log("No Connection");
-// });
+mongoose.connect(DB || "mongodb://localhost:27017/constructionssssss",{
+    useNewUrlParser:true,
+    useUnifiedTopology:true
+}).then(()=>{
+    console.log("connection successful");
+}).catch((error)=>{
+    console.log(error);
+    console.log("No Connection");
+});
 
 
 const staticPath = path.join(__dirname, '../public');
