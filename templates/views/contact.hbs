@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{{>headerlinks}}
+</head>
+
+<body>
+    <section class="sub-header2">
+        {{>navbar2}}
+        <div class="txtsub-container">
+            <h1 class="h-primary center">--CONTACT US--</h1>
+            <div class="main1 center">
+                <h1><span class="auto-input"></span></h1>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="row">
+            <span>
+                <div class="cont">
+                    <div class="details">
+                        <img src="images/home.svg" alt="address">
+                    </div>
+                    <h5 class="mob">The Amazon Tower</h5>
+                    <p class="park">Amazon lake road Tumkur</p>
+                    <hr>
+                </div>
+            </span>
+            <span>
+                <div class="cont">
+                    <div class="details">
+                        <img src="images/phone.svg" alt="mob">
+                    </div>
+                    <h5 class="mob">+918310XXXXXX</h5>
+                    <p class="park">Monday to Friday, 10AM to 4PM</p>
+                    <hr>
+                </div>
+            </span>
+            <span>
+
+                <div class="cont">
+                    <div class="details">
+                        <img src="images/envelope.svg" alt="Email">
+                    </div>
+                    <h5 class="mob">yaseen@amazonconstruction.com</h5>
+                    <p class="park">Email us to query</p>
+                    <hr>
+                </div>
+            </span>
+        </div>
+
+        <div class="map">
+            <p class="city center">--LOCATION--</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13343.881595811778!2d77.10404901147409!3d13.346846934994867!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1638587418428!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    <hr>
+
+    <section class="cont-col2">
+        <div class="render">
+            <div class="thumb">
+                <h3 class="nap center">----CONTACT----</h3>
+            </div>
+            <form action="/contact" method="POST">
+                <input type="text" name="name" placeholder="Enter Your Name" required>
+                <input type="email" name="email" placeholder="Enter Email id" required>
+                <input type="text" name="phone" placeholder="Enter mobile number" required>
+                <textarea rows="5" name="message" placeholder="Message" required></textarea>
+                <button type="submit" class="btn center1">send message</button>
+            </form>
+        </div>
+        </div>
+    </section>
+    {{>footer}}
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-input", { strings: ["One Of The Top Leading Enginering Construction in  2021."], typeSpeed: 120, backSpeed: 120, loop: true })
+    </script>
+    <script src="javascript/resp.js"></script>
+</body>
+
+</html>

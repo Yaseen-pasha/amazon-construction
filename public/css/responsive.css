@@ -1,0 +1,212 @@
+@media only screen and (max-width:1360px){
+    .nav-list{
+        display: block;
+        width: 34vw;
+        text-align: center; 
+        margin-left: 35px;
+    }
+    .navbar{
+        height: 141px;
+        transition: all 0.4s ease-out;
+    }
+    .rightNav{
+        flex-direction: column;
+        align-items: center;
+    }
+    #search{
+    font-size: 13px;
+    padding: 2px 0px 1px 0px;
+    width: 170px;
+    margin-left: 31px;
+    }
+    .btn-sm{
+    border: 2px solid white;
+    font-size: 12px;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 5vh;
+    }
+    .v-class{
+        content-visibility: hidden;
+    }
+    .main{
+        font-size: 14px;
+        padding-top: 5vh;
+    }
+    .image2 img{
+        width: 40vw;
+        padding: 7px;
+        border: 2px solid white;
+    }
+    .txt-container {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 80vh;
+        width: -webkit-fill-available;
+        /* position: absolute;
+        bottom: 0; */
+    }
+    .txt-box{
+        width: 97vw;
+        padding: 4px 0 0px 8px;
+        font-size: 14px;
+    }
+    .sub-box{
+        font-size: 11px;
+    }
+    .slider{
+        font-size: 21px;
+    }
+    .amz{
+        height: 21px;
+        padding-bottom: 3px;
+    }
+    @keyframes slider{
+        0% {margin-top: -140px;}
+        5% {margin-top: -50px;}
+        30% {margin-top: -50px;}
+        35% {margin-top: 0px;}
+        65% {margin-top: 0px;}
+        70% {margin-top: 50px;}
+        100% {margin-top: 50px;}
+    }
+    .btn{
+        font-size: 12px;
+    }
+    .section{
+        padding:7px 6px 0px 8px;
+        width: auto;
+    }
+    .city{
+        font-size: 17px;
+    }
+    .building{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+    }
+    .building img{
+        width: 96vw;
+    margin: 6px 0px 8px 0px;
+    align-items: center;
+    display: block;
+    }
+    .h-secondary {
+        font-size: 18px;
+    }
+    .sponsors img{
+        height: 24px;
+    }
+    .footer{
+        font-size: 9px;
+    }
+    .sub-header{
+        height: 38vh;
+        margin-bottom: 20px;
+    }
+    .txtsub-container {
+        height: 47vh;
+    }
+    .h-primary{
+        font-size: 20px;
+    }
+    #services{
+        margin:0px 0 7px 0px;
+    }
+    #services .box{
+        margin-bottom: 10px;
+    }
+    .sub-header1{
+        height: 38vh;
+        margin-bottom: 20px;
+    }
+    .main1 {
+        font-size: 13px;
+    }
+    .mob {
+        font-size: 16px;
+    }
+    .map iframe {
+        height: 30vh;
+        width: 57vw;
+        padding-left: 13px;
+    }
+    .details img {
+
+        width: 10%;
+    }
+    .sub-header2{
+        height: 38vh;
+    }
+    .header {
+        height: 85vh;
+        width: 100vw;
+        background: rgba(0, 0, 0, 0.4) url(../images/bg13.jpg);
+        background-size: cover;
+        background-blend-mode: darken;
+    }
+    .navbar img {
+        position: absolute;
+        height: 24px;
+        top: 4px;
+        width: 70px;
+        
+    }
+    .rightNav{
+        padding-left: 14px;
+        display: flex;
+        margin-right: 13%;
+        flex-direction: row;
+    }
+    .nedia{
+        display: flex;
+    }
+    .background {
+        background: rgba(0, 0, 0, 0.5) url(../images/navv.jpg);
+    }
+    .para1 {
+        padding: 0px 16px 5px 16px;
+        font-size: 15px;
+    }
+    .nav-list li {
+        list-style: none;
+        padding: 6px 0 6px 45px;
+    }
+    .nav-list li a{
+        color: purple;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 13px;
+        background: white;
+        display: block;
+    }
+    .btm{
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .park{
+    font-size: 14px;
+   }
+   .cont-col2 input, .cont-col2 textarea, .center1{
+    display: block;
+    margin: auto;
+    width: 300px;
+    /* padding: 2px;  */
+    margin-bottom: 15px;
+    border: 2px solid black;
+    border-radius: 9px;
+    outline: none;
+    /* width: 300px; */
+    padding: 4px;
+    }
+    .render{
+        height: 40vh;
+        padding-bottom: 15px;
+    }
+
+}   
