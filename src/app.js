@@ -5,7 +5,7 @@ const path = require("path")
 const User = require("./models/usermessage");
 const hbs = require("hbs");
 const dotenv = require("dotenv");
-const { nextTick } = require("process");
+// const { nextTick } = require("process");
 
 dotenv.config({path:"./config.env"});
 
@@ -15,11 +15,10 @@ const port = process.env.PORT || 8000;
 
 
 
-const DB = process.env.DATABASE;
-console.log(DB)
 
+const DB = process.env.DATABASE;
 // creating database
-mongoose.connect(DB || "mongodb://localhost:27017/constructionssssss",{
+mongoose.connect(DB || "mongodb://localhost:27017/amazon",{
     useNewUrlParser:true,
     useUnifiedTopology:true
 }).then(()=>{
@@ -30,12 +29,13 @@ mongoose.connect(DB || "mongodb://localhost:27017/constructionssssss",{
 });
 
 
+
 const staticPath = path.join(__dirname, '../public');
 const templatePath = path.join(__dirname, '../templates/views');
 const partialPath = path.join(__dirname, '../templates/partials');
 
 
-app.use(express.urlencoded({extended:false}))
+app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 // app.set('views', path.join(__dirname, '../views')) // Set the views directory
 app.use(express.static(staticPath));
@@ -58,14 +58,36 @@ app.get('/contact', (req, res)=>{
 
 });
 
+// app.post("/contact", (req, res)=>{
+//     const {name, email, phone, message} = req.body;
+//     userData.save().then(()=>{
+//         res.status(201).render("index");
+//     }).catch((error)=>{
+//         res.status(400).send(error);
+//         console.log(error)
+//     });
+// });
+// app.post("/contact", (req, res)=>{
+//     const {name, email, phone, message} = req.body;
+//     if (!name || !email || !phone || !message) {
+//         return res.send(422).json({error:"plz filled properly"});
+//     }
+//     const user = new User({name, email, phone, message});
+//     user.save().then(()=>{
+//         res.status(201).json({message: "user successful"});
+//     }).catch((err)=> res.status(500).json({error:"failed"}));
+
+// });
+
 app.post("/contact", (req, res)=>{
     const userData = new User(req.body);
     userData.save().then(()=>{
         res.status(201).render("index");
     }).catch((error)=>{
-        res.status(400).send(error);
+        res.status(400).render("error");
         console.log(error)
     });
+
 });
 app.get('*', (req, res)=>{
     res.render('')
@@ -74,3 +96,4 @@ app.get('*', (req, res)=>{
 app.listen(port, ()=>{
     console.log(`Server running at port no ${port}`)
 });
+

@@ -10,7 +10,6 @@ const userSchema = new mongoose.Schema({
     email:{
         type:String,
         required:true,
-        unique:true,
         validate(value){
             if (!validator.isEmail(value)){
                 throw new error ("Invalid Email Id")
@@ -34,3 +33,4 @@ const userSchema = new mongoose.Schema({
 })
 const User = new  mongoose.model("USER", userSchema);
 module.exports = User;
+
