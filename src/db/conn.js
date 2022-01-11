@@ -1,9 +1,12 @@
 const mongoose = require("mongoose");
 
 const DB = process.env.DATABASE;
-
+console.log(DB)
 // creating database
-mongoose.connect(DB).then(()=>{
+mongoose.connect(DB || "mongodb://localhost:27017/amazon",{
+    useNewUrlParser:true,
+    useUnifiedTopology:true
+}).then(()=>{
     console.log("connection successful");
 }).catch((error)=>{
     console.log(error);
