@@ -28,7 +28,7 @@ i{
 }
 .card{
     background: white;
-    padding: 60px;
+    padding: 40px;
     border-radius: 4px;
     box-shadow: 0 2px 3px #C8D0D8;
     display: inline-block;
@@ -52,6 +52,11 @@ i{
 .success{
     margin-top: 4%;
 }
+.hello{
+    font-size: 14px;
+    color: blue;
+    margin-top: 18%;
+}
 @media(max-width:1350px){
     h1{
         font-size: 95px !important;
@@ -68,5 +73,10 @@ i{
     p{
         font-size: 30px;
         margin-bottom: 100px;
+    }
+    .hello{
+        margin-top: 25%;
+        font-size: 26px;
+        color: blue;
     }
 }
