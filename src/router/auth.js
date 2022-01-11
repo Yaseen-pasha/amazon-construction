@@ -20,7 +20,7 @@ router.get('/contact', (req, res)=>{
 router.post("/contact", (req, res)=>{
     const userData = new User(req.body);
     userData.save().then(()=>{
-        res.status(201).render("index");
+        res.status(201).render("success");
     }).catch((error)=>{
         res.status(400).render("error");
         console.log(error)

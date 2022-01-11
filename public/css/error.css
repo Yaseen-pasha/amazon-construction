@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    text-align: center;
+    padding: 40px 0;
+    background: #EBF0F5;
+}
+h1{
+    color: #db4b4b;
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+p{
+    color: #404F5E;
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-size:17px;
+    margin: 0;
+}
+i{
+    color: #db4b4b;
+    font-size: 100px;
+    line-height: 165px;
+}
+.card{
+    background: white;
+    padding: 60px;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px #C8D0D8;
+    display: inline-block;
+    margin: 4% auto;
+}
+.btme{
+    text-decoration: none;
+    background: #80808070 !important;
+    color:black;
+    border-radius: 20px;
+    padding: 0 34px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid black;
+}
+.btme:hover{
+    color:blue;
+    background:#db4b4b!important;
+}
+.success{
+    margin-top: 4%;
+}
+@media(max-width:1350px){
+    h1{
+        font-size: 95px !important;
+    }
+    .btme{
+        font-size: 28px;
+        padding: 6px 80px;
+    }
+    .card{
+        width: 60%;
+        height: 26%;
+        margin: 30% auto;
+    }
+    p{
+        font-size: 30px;
+        margin-bottom: 10%;
+    }
+}
