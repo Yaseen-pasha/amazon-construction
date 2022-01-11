@@ -52,11 +52,6 @@ i{
 .success{
     margin-top: 4%;
 }
-.hello{
-    font-size: 14px;
-    color: blue;
-    margin-top: 18%;
-}
 @media(max-width:1350px){
     h1{
         font-size: 95px !important;
@@ -67,16 +62,11 @@ i{
     }
     .card{
         width: 60%;
-        height: 40%;
+        height: 34%;
         margin: 30% auto;
     }
     p{
         font-size: 30px;
-        margin-bottom: 100px;
-    }
-    .hello{
-        margin-top: 25%;
-        font-size: 26px;
-        color: blue;
+        margin-bottom: 90px;
     }
 }
