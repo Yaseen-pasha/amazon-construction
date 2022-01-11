@@ -58,7 +58,7 @@ i{
     }
     .btme{
         font-size: 28px;
-        padding: 6px 80px;
+        padding: 8px 45px;
     }
     .card{
         width: 60%;
@@ -67,6 +67,6 @@ i{
     }
     p{
         font-size: 30px;
-        margin-bottom: 10%;
+        margin-bottom: 42px;
     }
 }

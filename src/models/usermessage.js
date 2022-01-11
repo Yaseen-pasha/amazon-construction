@@ -16,10 +16,10 @@ const userSchema = new mongoose.Schema({
             }
         }
     },
-    phone:{
+    subject:{
         type:String,
         required:true,
-        minLength:10
+        minLength:3
     },
     message:{
         type:String,
