@@ -58,15 +58,15 @@ i{
     }
     .btms{
         font-size: 28px;
-        padding: 6px 80px;
+        padding: 8px 45px;
     }
     .card{
         width: 60%;
-        height: 26%;
+        height: 30%;
         margin: 30% auto;
     }
     p{
         font-size: 30px;
-        margin-bottom: 42px;
+        margin-bottom: 55px;
     }
 }

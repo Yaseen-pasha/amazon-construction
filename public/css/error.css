@@ -62,11 +62,11 @@ i{
     }
     .card{
         width: 60%;
-        height: 26%;
+        height: 30%;
         margin: 30% auto;
     }
     p{
         font-size: 30px;
-        margin-bottom: 42px;
+        margin-bottom: 55px;
     }
 }
