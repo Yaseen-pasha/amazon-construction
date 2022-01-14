@@ -58,7 +58,7 @@
         font-size: 11px;
     }
     .slider{
-        font-size: 21px;
+        font-size: 20px;
     }
     .amz{
         height: 21px;
@@ -69,8 +69,8 @@
         30% {margin-top: -50px;}
         35% {margin-top: 0px;}
         65% {margin-top: 0px;}
-        70% {margin-top: 50px;}
-        100% {margin-top: 50px;}
+        70% {margin-top: 46px;}
+        100% {margin-top: 46px;}
     }
     .btn{
         font-size: 12px;
