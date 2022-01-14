@@ -1,7 +1,7 @@
 @media only screen and (max-width:1360px){
     .nav-list{
         display: block;
-        width: 34vw;
+        width: 36vw;
         text-align: center; 
         margin-left: 35px;
     }
@@ -16,7 +16,7 @@
     #search{
     font-size: 13px;
     padding: 2px 0px 1px 0px;
-    width: 170px;
+    width: 45vw;
     margin-left: 31px;
     }
     .btn-sm{
@@ -52,7 +52,7 @@
     .txt-box{
         width: 97vw;
         padding: 4px 0 0px 8px;
-        font-size: 14px;
+        font-size: 13px;
     }
     .sub-box{
         font-size: 11px;
@@ -205,7 +205,7 @@
     padding: 4px;
     }
     .render{
-        height: 40vh;
+        height: 45vh;
         padding-bottom: 15px;
     }
 
