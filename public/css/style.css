@@ -466,6 +466,7 @@
     height: 13rem;
     /* background-color: red; */
     position: relative;
+    right: 30px;
 }
 .rot{
     width: 5rem;
