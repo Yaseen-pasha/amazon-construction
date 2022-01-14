@@ -7,7 +7,7 @@ burger.addEventListener('click', ()=>{
     rightNav.classList.toggle('v-class');
     navList.classList.toggle('v-class');
     navbar.classList.toggle('h-nav');
-})
+});
     var burger = document.getElementById("burger");
     burger.onclick = function(){
     burger.classList.toggle("openburger");
@@ -15,4 +15,4 @@ burger.addEventListener('click', ()=>{
 var loader = document.getElementById("preloader");
 window.addEventListener("load", function(){
     loader.style.display = "none";
-})
+});
