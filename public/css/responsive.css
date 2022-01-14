@@ -62,7 +62,6 @@
     }
     .amz{
         height: 21px;
-        padding-bottom: 3px;
     }
     @keyframes slider{
         0% {margin-top: -140px;}
